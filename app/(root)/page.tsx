@@ -46,34 +46,6 @@ const staggerContainer = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-white">
-      {/* Header */}
-      <motion.header 
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="border-b border-slate-800"
-      >
-        <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-              <span className="text-slate-900 font-bold text-sm">প</span>
-            </div>
-            <span className="text-xl font-bold">প্রিলাইন</span>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="hover:text-yellow-400 transition-colors">হোম</a>
-            <a href="#" className="hover:text-yellow-400 transition-colors">সেবা</a>
-            <a href="#" className="hover:text-yellow-400 transition-colors">পোর্টফোলিও</a>
-            <a href="#" className="hover:text-yellow-400 transition-colors">পদ্ধতি</a>
-            <a href="#" className="hover:text-yellow-400 transition-colors">পণ্য</a>
-            <Button className="bg-yellow-400 text-slate-900 hover:bg-yellow-500">
-              যোগাযোগ করুন
-            </Button>
-          </div>
-        </nav>
-      </motion.header>
-
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
         <motion.div
@@ -679,21 +651,6 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-slate-800 py-8">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                <span className="text-slate-900 font-bold text-xs">প</span>
-              </div>
-              <span className="font-semibold">প্রিলাইন</span>
-            </div>
-            <p className="text-slate-400 text-sm">© ২০২৪ প্রিলাইন ল্যাবস।</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

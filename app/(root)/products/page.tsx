@@ -105,7 +105,8 @@ export default function Portfolio() {
                 <div className="relative">
                   <Image
                     src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600"
-
+                    width={300}
+                    height={300}
                     alt="E-commerce Platform"
                     className="w-full h-64 object-cover"
                   />
